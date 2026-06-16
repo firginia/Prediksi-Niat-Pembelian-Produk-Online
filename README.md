@@ -1,96 +1,129 @@
-# TUGAS MANCHINE LEARNING 
+<div align="center">
 
-Nama         : Firginia Lahwa Sakira (2330511047)
+# 🛒 Prediksi Niat Pembelian Produk Online
+### Berdasarkan Perilaku Pengguna Menggunakan Algoritma Random Forest dengan Pendekatan CRISP-DM
 
-Kelas        : 6C Teknik Informatika 
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-RandomForest-F7931E?logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![Status](https://img.shields.io/badge/status-completed-success)
+![License](https://img.shields.io/badge/license-Academic-lightgrey)
 
-Mata Kuliah  : Manchine Learning
+**👤 Firginia Lahwa Sakira** &nbsp;•&nbsp; NIM `2330511047` &nbsp;•&nbsp; Kelas `6C Teknik Informatika`
+📚 Mata Kuliah: *Machine Learning*
+
+</div>
 
 ---
-# Prediksi Niat Pembelian Produk Online Berdasarkan Perilaku Pengguna Menggunakan Algoritma Random Forest dengan Pendekatan CRISP-DM
 
-## 1. Project Overview
+## 📑 Daftar Isi
 
-### Latar Belakang
+| | |
+|---|---|
+| 🧭 [1. Project Overview](#-1-project-overview) | 🧹 [4. Data Preparation](#-4-data-preparation) |
+| 💼 [2. Business Understanding](#-2-business-understanding) | 🤖 [5. Modeling](#-5-modeling) |
+| 🔍 [3. Data Understanding](#-3-data-understanding) | 📊 [6. Evaluation](#-6-evaluation) |
+| ⭐ [7. Feature Importance](#-7-feature-importance) | ✅ [8. Kesimpulan](#-8-kesimpulan) |
+
+---
+
+## 🧭 1. Project Overview
+
+### 🌐 Latar Belakang
 
 Perkembangan teknologi digital telah mendorong pertumbuhan industri e-commerce secara signifikan dalam beberapa tahun terakhir. Berbagai platform belanja online bersaing untuk meningkatkan pengalaman pengguna dan tingkat konversi penjualan. Namun, salah satu tantangan utama yang dihadapi perusahaan e-commerce adalah tingginya jumlah pengunjung situs yang tidak melakukan transaksi pembelian setelah mengakses berbagai halaman produk.
 
-Perilaku pengguna selama menjelajahi situs, seperti jumlah halaman yang dikunjungi, durasi kunjungan, serta tingkat keluar dari halaman tertentu, dapat memberikan informasi yang berharga untuk memprediksi kemungkinan terjadinya pembelian. Dengan memanfaatkan teknik machine learning, perusahaan dapat mengidentifikasi calon pelanggan yang memiliki potensi tinggi untuk melakukan transaksi.
+Perilaku pengguna selama menjelajahi situs — seperti jumlah halaman yang dikunjungi, durasi kunjungan, serta tingkat keluar dari halaman tertentu — dapat memberikan informasi yang berharga untuk memprediksi kemungkinan terjadinya pembelian. Dengan memanfaatkan teknik machine learning, perusahaan dapat mengidentifikasi calon pelanggan yang memiliki potensi tinggi untuk melakukan transaksi.
 
-Pada proyek ini digunakan algoritma **Random Forest** untuk membangun model klasifikasi yang mampu memprediksi niat pembelian pengguna berdasarkan perilaku mereka selama mengakses situs e-commerce.
+> 🌲 Pada proyek ini digunakan algoritma **Random Forest** untuk membangun model klasifikasi yang mampu memprediksi niat pembelian pengguna berdasarkan perilaku mereka selama mengakses situs e-commerce.
 
-### Manfaat Proyek
+### 💡 Manfaat Proyek
 
-**Bagi perusahaan e-commerce:**
-- Membantu mengidentifikasi pelanggan potensial.
-- Mendukung strategi pemasaran yang lebih tepat sasaran.
-- Meningkatkan efektivitas promosi dan konversi penjualan.
+<table>
+<tr>
+<td valign="top" width="50%">
 
-**Bagi peneliti:**
-- Menambah pemahaman mengenai penerapan machine learning dalam bidang e-commerce.
-- Menjadi referensi untuk pengembangan model prediksi perilaku pelanggan.
+**🏢 Bagi Perusahaan E-Commerce**
+- 🎯 Membantu mengidentifikasi pelanggan potensial
+- 📣 Mendukung strategi pemasaran yang lebih tepat sasaran
+- 💰 Meningkatkan efektivitas promosi dan konversi penjualan
+
+</td>
+<td valign="top" width="50%">
+
+**🎓 Bagi Peneliti**
+- 📖 Menambah pemahaman penerapan ML dalam e-commerce
+- 🔬 Menjadi referensi pengembangan model prediksi perilaku pelanggan
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 2. Business Understanding
+## 💼 2. Business Understanding
 
-### Problem Statements
+### ❓ Problem Statements
 
 1. Bagaimana membangun model machine learning yang mampu memprediksi niat pembelian pengguna situs e-commerce?
 2. Faktor-faktor apa saja yang memengaruhi keputusan pembelian pengguna?
 3. Seberapa baik performa algoritma Random Forest dalam memprediksi niat pembelian produk online?
 
-### Goals
+### 🎯 Goals
 
 1. Membangun model klasifikasi menggunakan algoritma Random Forest.
 2. Mengidentifikasi fitur yang paling berpengaruh terhadap keputusan pembelian pengguna.
 3. Mengevaluasi performa model menggunakan metrik klasifikasi.
 
-### Solution Statement
+### ✅ Solution Statement
 
-Untuk menyelesaikan permasalahan yang telah dirumuskan, digunakan algoritma **Random Forest Classifier**. Alasan pemilihan algoritma ini adalah:
+Untuk menyelesaikan permasalahan yang telah dirumuskan, digunakan algoritma **Random Forest Classifier**. Alasan pemilihan algoritma ini:
 
-- Memiliki performa yang baik pada kasus klasifikasi.
-- Mampu menangani data dengan jumlah fitur yang cukup banyak.
-- Mengurangi risiko overfitting dibandingkan Decision Tree tunggal.
-- Dapat memberikan informasi mengenai tingkat kepentingan setiap fitur (*feature importance*).
+- ⚡ Memiliki performa yang baik pada kasus klasifikasi
+- 🧩 Mampu menangani data dengan jumlah fitur yang cukup banyak
+- 🛡️ Mengurangi risiko overfitting dibandingkan Decision Tree tunggal
+- 📊 Dapat memberikan informasi mengenai tingkat kepentingan setiap fitur (*feature importance*)
 
 ---
 
-## 3. Data Understanding
+## 🔍 3. Data Understanding
 
-### Dataset
+### 📦 Dataset
 
 Dataset yang digunakan adalah **Online Shoppers Purchasing Intention Dataset** yang diperoleh dari [Kaggle](https://www.kaggle.com/) dan berasal dari UCI Machine Learning Repository. Dataset ini berisi data aktivitas pengguna selama mengunjungi situs e-commerce yang digunakan untuk memprediksi kemungkinan terjadinya pembelian.
 
-### Informasi Dataset
+<div align="center">
 
-df.info()
-df.info()
+**`df.info()`**
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
+<img width="300" height="300" alt="df.info()" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
 
-df.shape
+**`df.shape`**
 
-<img width="256" height="67" alt="image" src="https://github.com/user-attachments/assets/0ba02a36-7bdc-4a5b-ac91-4aad2a8cd8d7" />
+<img width="256" height="67" alt="df.shape" src="https://github.com/user-attachments/assets/0ba02a36-7bdc-4a5b-ac91-4aad2a8cd8d7" />
+
+</div>
 
 | Keterangan    | Nilai     |
 |---------------|-----------|
-| Jumlah Data   | 12.330    |
-| Jumlah Fitur  | 18        |
-| Missing Value | Tidak Ada |
-| Target        | `Revenue` |
+| 🗂️ Jumlah Data   | 12.330    |
+| 🧬 Jumlah Fitur  | 18        |
+| ❌ Missing Value | Tidak Ada |
+| 🎯 Target        | `Revenue` |
 
-### Struktur Dataset
+### 🧱 Struktur Dataset
 
 | Tipe Data | Jumlah Kolom |
 |-----------|:------------:|
-| Integer   | 7            |
-| Float     | 7            |
-| Object    | 2            |
-| Boolean   | 2            |
+| 🔢 Integer   | 7            |
+| 🔣 Float     | 7            |
+| 🔤 Object    | 2            |
+| ☑️ Boolean   | 2            |
 
-### Deskripsi Variabel
+### 📋 Deskripsi Variabel
+
+<details>
+<summary><b>Klik untuk melihat detail 18 variabel dataset</b></summary>
 
 | Variabel | Deskripsi |
 |----------|-----------|
@@ -113,31 +146,38 @@ df.shape
 | `Weekend` | Kunjungan pada akhir pekan |
 | `Revenue` | Status pembelian pengguna (target) |
 
-### Kondisi Dataset
+</details>
 
-Hasil eksplorasi menunjukkan bahwa seluruh atribut memiliki jumlah data yang sama, yaitu 12.330 observasi, sehingga tidak ditemukan *missing value* pada dataset. Selain itu, tidak ditemukan permasalahan kualitas data yang signifikan sehingga dataset dapat langsung digunakan pada tahap persiapan data.
+### ✨ Kondisi Dataset
 
-### Distribusi Target
+Hasil eksplorasi menunjukkan bahwa seluruh atribut memiliki jumlah data yang sama, yaitu 12.330 observasi, sehingga **tidak ditemukan *missing value*** pada dataset. Selain itu, tidak ditemukan permasalahan kualitas data yang signifikan sehingga dataset dapat langsung digunakan pada tahap persiapan data.
 
-<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/ea283c37-d8f6-40f2-9555-027bf9136b63" />
+### ⚖️ Distribusi Target
 
+<div align="center">
+<img width="250" height="250" alt="Distribusi Target Revenue" src="https://github.com/user-attachments/assets/ea283c37-d8f6-40f2-9555-027bf9136b63" />
+</div>
 
 | Revenue       | Jumlah Data | Persentase |
 |---------------|:-----------:|:----------:|
-| Tidak Membeli | 10.297      | 84,37%     |
-| Membeli       | 1.908       | 15,63%     |
+| 🔴 Tidak Membeli | 10.297      | 84,37%     |
+| 🟢 Membeli       | 1.908       | 15,63%     |
 
-> Dataset bersifat **tidak seimbang (imbalanced)**, karena jumlah pengguna yang tidak melakukan pembelian jauh lebih besar dibandingkan pengguna yang melakukan pembelian.
+> ⚠️ **Dataset bersifat tidak seimbang (imbalanced)** — jumlah pengguna yang tidak melakukan pembelian jauh lebih besar dibandingkan pengguna yang melakukan pembelian.
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/ba07e536-78e4-4583-8f07-0319c19f4765" />
+### 🔥 Korelasi Antar Fitur
+
+<div align="center">
+<img width="300" height="300" alt="Heatmap korelasi fitur" src="https://github.com/user-attachments/assets/ba07e536-78e4-4583-8f07-0319c19f4765" />
+</div>
 
 Heatmap digunakan untuk melihat hubungan antar fitur numerik dalam dataset.
 
 ---
 
-## 4. Data Preparation
+## 🧹 4. Data Preparation
 
-### Data Cleaning
+### 🗑️ Data Cleaning
 
 Menghapus data duplikat apabila ditemukan.
 
@@ -145,34 +185,30 @@ Menghapus data duplikat apabila ditemukan.
 df = df.drop_duplicates()
 ```
 
-### Encoding Data Kategorikal
+### 🔁 Encoding Data Kategorikal
 
 Atribut kategorikal dikonversi ke bentuk numerik menggunakan **Label Encoding**:
 
-- `Month`
-- `VisitorType`
+- 📅 `Month`
+- 👥 `VisitorType`
 
-  <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/9510c0c3-c4e2-425c-b19b-fd3d2acf9b48" />
+<div align="center">
+<img width="300" height="300" alt="Label encoding VisitorType" src="https://github.com/user-attachments/assets/9510c0c3-c4e2-425c-b19b-fd3d2acf9b48" />
+</div>
 
-- `Weekend`
-- `Revenue`
+- 🏖️ `Weekend`
+- 💳 `Revenue`
 
-### Feature Selection
-
-```python
-X = df.drop('Revenue', axis=1)
-y = df['Revenue']
-```
-
-### Feature Selection
+### 🎛️ Feature Selection
 
 Memisahkan variabel fitur (X) dan target (y).
 
 ```python
 X = df.drop('Revenue', axis=1)
 y = df['Revenue']
+```
 
-### Train-Test Split
+### ✂️ Train-Test Split
 
 Dataset dibagi dengan rasio **80:20**.
 
@@ -185,19 +221,19 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 ```
 
-### Alasan Tidak Menggunakan Normalisasi
+### 🚫 Alasan Tidak Menggunakan Normalisasi
 
-Normalisasi tidak dilakukan karena algoritma Random Forest tidak sensitif terhadap perbedaan skala antar fitur.
+Normalisasi tidak dilakukan karena algoritma Random Forest **tidak sensitif** terhadap perbedaan skala antar fitur.
 
 ---
 
-## 5. Modeling
+## 🤖 5. Modeling
 
-### Algoritma Random Forest
+### 🌲 Algoritma Random Forest
 
 Random Forest merupakan algoritma *ensemble learning* yang bekerja dengan membangun sejumlah pohon keputusan (*decision tree*) dan menggabungkan hasil prediksi dari seluruh pohon menggunakan mekanisme *voting* mayoritas.
 
-### Implementasi Model
+### ⚙️ Implementasi Model
 
 ```python
 rf = RandomForestClassifier(
@@ -208,7 +244,7 @@ rf = RandomForestClassifier(
 rf.fit(X_train, y_train)
 ```
 
-### Prediksi
+### 🔮 Prediksi
 
 ```python
 y_pred = rf.predict(X_test)
@@ -216,68 +252,69 @@ y_pred = rf.predict(X_test)
 
 ---
 
-## 6. Evaluation
+## 📊 6. Evaluation
 
 Evaluasi dilakukan menggunakan metrik **Accuracy, Precision, Recall**, dan **F1-Score**.
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/0cbd1331-05d9-4688-8e5b-ab543843b5d8" />
+<div align="center">
+<img width="300" height="300" alt="Confusion matrix evaluasi model" src="https://github.com/user-attachments/assets/0cbd1331-05d9-4688-8e5b-ab543843b5d8" />
+</div>
 
-Evaluasi dilakukan menggunakan metrik accuracy, precision, recall, dan F1-score.
-### Hasil Evaluasi
+### 🏆 Hasil Evaluasi
 
 | Metrik    | Nilai  |
 |-----------|:------:|
-| Accuracy  | 90,41% |
-| Precision | 74,06% |
-| Recall    | 54,42% |
-| F1-Score  | 62,74% |
+| ✅ Accuracy  | **90,41%** |
+| 🎯 Precision | **74,06%** |
+| 📈 Recall    | **54,42%** |
+| ⚖️ F1-Score  | **62,74%** |
 
-**Accuracy** — Nilai sebesar 90,41% menunjukkan bahwa model mampu melakukan klasifikasi dengan tingkat ketepatan yang tinggi terhadap keseluruhan data pengujian.
-
-**Precision** — Nilai sebesar 74,06% menunjukkan bahwa sebagian besar prediksi pembelian yang dihasilkan model merupakan prediksi yang benar.
-
-**Recall** — Nilai sebesar 54,42% menunjukkan bahwa model masih belum mampu mendeteksi seluruh pengguna yang benar-benar melakukan pembelian. Kondisi ini dipengaruhi oleh distribusi data yang tidak seimbang.
-
-**F1-Score** — Nilai sebesar 62,74% menunjukkan keseimbangan performa yang cukup baik antara precision dan recall.
+| Metrik | Insight |
+|---|---|
+| ✅ **Accuracy** | Nilai sebesar 90,41% menunjukkan model mampu melakukan klasifikasi dengan tingkat ketepatan tinggi terhadap keseluruhan data pengujian. |
+| 🎯 **Precision** | Nilai sebesar 74,06% menunjukkan sebagian besar prediksi pembelian yang dihasilkan model merupakan prediksi yang benar. |
+| 📈 **Recall** | Nilai sebesar 54,42% menunjukkan model masih belum mampu mendeteksi seluruh pengguna yang benar-benar melakukan pembelian, dipengaruhi oleh distribusi data yang tidak seimbang. |
+| ⚖️ **F1-Score** | Nilai sebesar 62,74% menunjukkan keseimbangan performa yang cukup baik antara precision dan recall. |
 
 ---
 
-## 7. Feature Importance
+## ⭐ 7. Feature Importance
 
 Salah satu keunggulan algoritma Random Forest adalah kemampuannya dalam mengukur tingkat kepentingan masing-masing fitur.
 
-### Top 10 Feature Importance
+<div align="center">
+<img width="300" height="300" alt="Grafik feature importance" src="https://github.com/user-attachments/assets/0569bd27-995e-4bb6-b20a-b2ed6790b18a" />
+</div>
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/0569bd27-995e-4bb6-b20a-b2ed6790b18a" />
+> 📌 Grafik menunjukkan bahwa **`PageValues`** merupakan fitur yang paling berpengaruh terhadap keputusan pembelian pengguna.
 
-Grafik menunjukkan bahwa PageValues merupakan fitur yang paling berpengaruh terhadap keputusan pembelian pengguna.
-
+### 🔝 Top 10 Feature Importance
 
 | Peringkat | Fitur                      | Importance |
 |:---------:|-----------------------------|:----------:|
-| 1         | `PageValues`                | 0,3816     |
-| 2         | `ProductRelated_Duration`   | 0,0889     |
-| 3         | `ExitRates`                 | 0,0867     |
-| 4         | `ProductRelated`            | 0,0751     |
-| 5         | `Administrative_Duration`   | 0,0608     |
-| 6         | `BounceRates`                | 0,0567     |
-| 7         | `Month`                     | 0,0418     |
-| 8         | `Administrative`            | 0,0410     |
-| 9         | `TrafficType`               | 0,0322     |
-| 10        | `Region`                    | 0,0299     |
+| 🥇 1 | `PageValues`                | 0,3816     |
+| 🥈 2 | `ProductRelated_Duration`   | 0,0889     |
+| 🥉 3 | `ExitRates`                 | 0,0867     |
+| 4️⃣ | `ProductRelated`            | 0,0751     |
+| 5️⃣ | `Administrative_Duration`   | 0,0608     |
+| 6️⃣ | `BounceRates`                | 0,0567     |
+| 7️⃣ | `Month`                     | 0,0418     |
+| 8️⃣ | `Administrative`            | 0,0410     |
+| 9️⃣ | `TrafficType`               | 0,0322     |
+| 🔟 | `Region`                    | 0,0299     |
 
-### Analisis
+### 🧠 Analisis
 
 Fitur `PageValues` memiliki pengaruh terbesar terhadap keputusan pembelian pengguna. Selain itu, durasi kunjungan pada halaman produk, jumlah halaman produk yang dikunjungi, dan tingkat keluar halaman juga berkontribusi secara signifikan terhadap hasil prediksi.
 
 ---
 
-## 8. Kesimpulan
+## ✅ 8. Kesimpulan
 
-Algoritma Random Forest berhasil digunakan untuk memprediksi niat pembelian pengguna pada situs e-commerce menggunakan **Online Shoppers Purchasing Intention Dataset**.
+🌲 Algoritma **Random Forest** berhasil digunakan untuk memprediksi niat pembelian pengguna pada situs e-commerce menggunakan **Online Shoppers Purchasing Intention Dataset**.
 
-Model yang dibangun menghasilkan nilai **Accuracy 90,41%**, **Precision 74,06%**, **Recall 54,42%**, dan **F1-Score 62,74%**. Hasil tersebut menunjukkan bahwa model memiliki kemampuan yang baik dalam mengklasifikasikan perilaku pengguna berdasarkan aktivitas mereka selama mengakses situs.
+📊 Model yang dibangun menghasilkan nilai **Accuracy 90,41%**, **Precision 74,06%**, **Recall 54,42%**, dan **F1-Score 62,74%**. Hasil tersebut menunjukkan bahwa model memiliki kemampuan yang baik dalam mengklasifikasikan perilaku pengguna berdasarkan aktivitas mereka selama mengakses situs.
 
-Analisis *feature importance* menunjukkan bahwa `PageValues`, `ProductRelated_Duration`, `ExitRates`, dan `ProductRelated` merupakan faktor yang paling berpengaruh terhadap keputusan pembelian pengguna.
+⭐ Analisis *feature importance* menunjukkan bahwa `PageValues`, `ProductRelated_Duration`, `ExitRates`, dan `ProductRelated` merupakan faktor yang paling berpengaruh terhadap keputusan pembelian pengguna.
 
-Meskipun demikian, distribusi data yang tidak seimbang menyebabkan kemampuan model dalam mendeteksi seluruh pengguna yang melakukan pembelian masih dapat ditingkatkan. Pada penelitian selanjutnya dapat diterapkan teknik penanganan data tidak seimbang seperti **SMOTE** atau **optimasi hyperparameter** untuk meningkatkan performa model.
+⚠️ Meskipun demikian, distribusi data yang tidak seimbang menyebabkan kemampuan model dalam mendeteksi seluruh pengguna yang melakukan pembelian masih dapat ditingkatkan. Pada penelitian selanjutnya dapat diterapkan teknik penanganan data tidak seimbang seperti **SMOTE** atau **optimasi hyperparameter** untuk meningkatkan performa model.
