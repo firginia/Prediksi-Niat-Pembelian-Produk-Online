@@ -7,6 +7,7 @@
 **👤 Firginia Lahwa Sakira** &nbsp;•&nbsp; NIM `2330511047`
 **👤 Thania Rizkita** &nbsp;•&nbsp; NIM `2330511053`
 Kelas `6C Teknik Informatika` &nbsp;•&nbsp; 📚 Mata Kuliah: *Machine Learning*
+
 Link Aplikasi https://huggingface.co/spaces/Firginia/Tugas_Machine_Learning/tree/main
 </div>
 
