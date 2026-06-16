@@ -1,3 +1,9 @@
+# TUGAS MANCHINE LEARNING 
+
+Nama         : Firginia Lahwa Sakira (2330511047)
+Kelas        : 6C Teknik Informatika 
+Mata Kuliah  : Manchine Learning
+---
 # Prediksi Niat Pembelian Produk Online Berdasarkan Perilaku Pengguna Menggunakan Algoritma Random Forest dengan Pendekatan CRISP-DM
 
 ## 1. Project Overview
