@@ -65,12 +65,14 @@ df.info()
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
 
 df.shape
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/14b0cab5-1037-4fac-92db-0cd41234890d" />
+<img width="230" height="250" alt="image" src="https://github.com/user-attachments/assets/14b0cab5-1037-4fac-92db-0cd41234890d" />
 
-| Kolom 1 | Kolom 2 | Kolom 3 |
-|----------|----------|----------|
-| Data 1 | Data 2 | Data 3 |
-| Data 4 | Data 5 | Data 6 |
+| Keterangan | Nilai |
+|----------|----------|
+| Jumlah data | 12.330 | 
+| jumlah fitur | 18 | 
+| Missing Value | Tidak Ada | 
+| Target | revenue | 
 
 
 3.3 Struktur Dataset
