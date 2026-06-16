@@ -79,7 +79,7 @@ df.info()
 
 df.shape
 
-<img width="100" height="130" alt="image" src="https://github.com/user-attachments/assets/14b0cab5-1037-4fac-92db-0cd41234890d" />
+<img width="100" height="90" alt="image" src="https://github.com/user-attachments/assets/14b0cab5-1037-4fac-92db-0cd41234890d" />
 
 | Keterangan | Nilai |
 |----------|----------|
