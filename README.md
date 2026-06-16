@@ -6,43 +6,6 @@ Prediksi Niat Pembelian Produk Online Berdasarkan Perilaku Pengguna Menggunakan 
 Dataset: Online Shoppers Purchasing Intention Dataset (UCI / Kaggle)
 Pendekatan: CRISP-DM
 2026
- 
-Daftar Isi
-Daftar Isi	2
-1. Project Overview	4
-1.1 Latar Belakang	4
-1.2 Manfaat Proyek	4
-2. Business Understanding	4
-2.1 Problem Statements	4
-2.2 Goals	5
-2.3 Solution Statement	5
-3. Data Understanding	5
-3.1 Dataset	5
-3.2 Informasi Dataset	5
-3.3 Struktur Dataset	6
-3.4 Deskripsi Variabel	6
-3.5 Kondisi Dataset	7
-3.6 Distribusi Target	7
-4. Data Preparation	7
-4.1 Data Cleaning	7
-4.2 Encoding Data Kategorikal	7
-4.3 Feature Selection	7
-4.4 Train-Test Split	8
-4.5 Alasan Tidak Menggunakan Normalisasi	8
-5. Modeling	8
-5.1 Algoritma Random Forest	8
-5.2 Implementasi Model	8
-5.3 Prediksi	8
-6. Evaluation	8
-6.1 Hasil Evaluasi	9
-6.2 Accuracy	9
-6.3 Precision	9
-6.4 Recall	9
-6.5 F1-Score	9
-7. Feature Importance	9
-7.1 Top 10 Feature Importance	9
-7.2 Analisis	10
-8. Kesimpulan	10
 
 1. Project Overview
 1.1 Latar Belakang
@@ -82,7 +45,7 @@ Untuk menyelesaikan permasalahan yang telah dirumuskan, digunakan algoritma Rand
 Dataset yang digunakan adalah Online Shoppers Purchasing Intention Dataset yang diperoleh dari Kaggle dan berasal dari UCI Machine Learning Repository. Dataset ini berisi data aktivitas pengguna selama mengunjungi situs e-commerce yang digunakan untuk memprediksi kemungkinan terjadinya pembelian.
 3.2 Informasi Dataset
 df.info()
-<img width="562" height="550" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
+<img width="9,32" height="9,51" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
 
  
 df.shape
