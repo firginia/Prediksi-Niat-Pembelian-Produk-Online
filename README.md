@@ -3,11 +3,6 @@
 # 🛒 Prediksi Niat Pembelian Produk Online
 ### Berdasarkan Perilaku Pengguna Menggunakan Algoritma Random Forest dengan Pendekatan CRISP-DM
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-RandomForest-F7931E?logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
-![Status](https://img.shields.io/badge/status-completed-success)
-![License](https://img.shields.io/badge/license-Academic-lightgrey)
 
 **👤 Firginia Lahwa Sakira** &nbsp;•&nbsp; NIM `2330511047` &nbsp;•&nbsp; Kelas `6C Teknik Informatika`
 📚 Mata Kuliah: *Machine Learning*
