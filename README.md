@@ -1,13 +1,13 @@
 # Prediksi-Niat-Pembelian-Produk-Online
 
-LAPORAN PROYEK MACHINE LEARNING
-Prediksi Niat Pembelian Produk Online Berdasarkan Perilaku Pengguna Menggunakan Algoritma Random Forest dengan Pendekatan CRISP-DM
+**LAPORAN PROYEK MACHINE LEARNING**
+**Prediksi Niat Pembelian Produk Online Berdasarkan Perilaku Pengguna Menggunakan Algoritma Random Forest dengan Pendekatan CRISP-DM**
 
 Dataset: Online Shoppers Purchasing Intention Dataset (UCI / Kaggle)
 Pendekatan: CRISP-DM
 2026
 
-1. Project Overview
+**1. Project Overview**
 1.1 Latar Belakang
 Perkembangan teknologi digital telah mendorong pertumbuhan industri e-commerce secara signifikan dalam beberapa tahun terakhir. Berbagai platform belanja online bersaing untuk meningkatkan pengalaman pengguna dan tingkat konversi penjualan. Namun, salah satu tantangan utama yang dihadapi perusahaan e-commerce adalah tingginya jumlah pengunjung situs yang tidak melakukan transaksi pembelian setelah mengakses berbagai halaman produk.
 Perilaku pengguna selama menjelajahi situs, seperti jumlah halaman yang dikunjungi, durasi kunjungan, serta tingkat keluar dari halaman tertentu, dapat memberikan informasi yang berharga untuk memprediksi kemungkinan terjadinya pembelian. Dengan memanfaatkan teknik machine learning, perusahaan dapat mengidentifikasi calon pelanggan yang memiliki potensi tinggi untuk melakukan transaksi.
@@ -44,26 +44,43 @@ Untuk menyelesaikan permasalahan yang telah dirumuskan, digunakan algoritma Rand
 3.1 Dataset
 Dataset yang digunakan adalah Online Shoppers Purchasing Intention Dataset yang diperoleh dari Kaggle dan berasal dari UCI Machine Learning Repository. Dataset ini berisi data aktivitas pengguna selama mengunjungi situs e-commerce yang digunakan untuk memprediksi kemungkinan terjadinya pembelian.
 3.2 Informasi Dataset
+
 df.info()
+
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
 
- 
 df.shape
- 
-Keterangan	Nilai
-Jumlah Data	12.330
-Jumlah Fitur	18
-Missing Value	Tidak Ada
-Target	Revenue
-Tabel 1. Informasi umum dataset
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/14b0cab5-1037-4fac-92db-0cd41234890d" />
+
+| Kolom 1 | Kolom 2 | Kolom 3 |
+|----------|----------|----------|
+| Data 1 | Data 2 | Data 3 |
+| Data 4 | Data 5 | Data 6 |
+
+
 3.3 Struktur Dataset
-Berdasarkan hasil eksplorasi data menggunakan fungsi info(), dataset terdiri dari kolom dengan tipe data sebagai berikut:
-Tipe Data	Jumlah Kolom
-Integer	7
-Float	7
-Object	2
-Boolean	2
-Tabel 2. Struktur tipe data dataset
+### Struktur Dataset
+
+Berdasarkan hasil eksplorasi menggunakan fungsi `df.info()`, dataset terdiri dari beberapa tipe data sebagai berikut:
+
+| Tipe Data | Jumlah Kolom |
+|------------|------------|
+| Integer | 7 |
+| Float | 7 |
+| Object | 2 |
+| Boolean | 2 |
+
+Kolom bertipe **Object** terdiri dari:
+
+- Month
+- VisitorType
+
+Sedangkan kolom bertipe **Boolean** terdiri dari:
+
+- Weekend
+- Revenue
+
+Karena algoritma Machine Learning tidak dapat memproses data kategorikal secara langsung, maka atribut tersebut akan dikonversi ke bentuk numerik pada tahap Data Preparation menggunakan Label Encoding.
 3.4 Deskripsi Variabel
 Variabel	Deskripsi
 Administrative	Jumlah halaman administratif yang dikunjungi
