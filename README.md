@@ -44,20 +44,33 @@ Berdasarkan latar belakang yang telah dijelaskan, permasalahan yang akan diseles
 5.	Seberapa baik performa algoritma Random Forest dalam memprediksi niat pembelian produk online?
 
 2.2 Goals
+
 Tujuan dari proyek ini adalah:
+
 1.	Membangun model klasifikasi menggunakan algoritma Random Forest.
-2.	Mengidentifikasi fitur yang paling berpengaruh terhadap keputusan pembelian pengguna.
-3.	Mengevaluasi performa model menggunakan metrik klasifikasi.
+   
+3.	Mengidentifikasi fitur yang paling berpengaruh terhadap keputusan pembelian pengguna.
+   
+5.	Mengevaluasi performa model menggunakan metrik klasifikasi.
 
 2.3 Solution Statement
+
 Untuk menyelesaikan permasalahan yang telah dirumuskan, digunakan algoritma Random Forest Classifier. Alasan pemilihan algoritma ini adalah:
+
 •	Memiliki performa yang baik pada kasus klasifikasi.
+
 •	Mampu menangani data dengan jumlah fitur yang cukup banyak.
+
 •	Mengurangi risiko overfitting dibandingkan Decision Tree tunggal.
+
 •	Dapat memberikan informasi mengenai tingkat kepentingan setiap fitur (feature importance).
+
 3. Data Understanding
+   
 3.1 Dataset
+
 Dataset yang digunakan adalah Online Shoppers Purchasing Intention Dataset yang diperoleh dari Kaggle dan berasal dari UCI Machine Learning Repository. Dataset ini berisi data aktivitas pengguna selama mengunjungi situs e-commerce yang digunakan untuk memprediksi kemungkinan terjadinya pembelian.
+
 3.2 Informasi Dataset
 
 df.info()
@@ -65,7 +78,8 @@ df.info()
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
 
 df.shape
-<img width="230" height="250" alt="image" src="https://github.com/user-attachments/assets/14b0cab5-1037-4fac-92db-0cd41234890d" />
+
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/14b0cab5-1037-4fac-92db-0cd41234890d" />
 
 | Keterangan | Nilai |
 |----------|----------|
