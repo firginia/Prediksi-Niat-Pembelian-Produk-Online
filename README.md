@@ -10,23 +10,38 @@ Pendekatan: CRISP-DM
 **1. Project Overview**
 1.1 Latar Belakang
 Perkembangan teknologi digital telah mendorong pertumbuhan industri e-commerce secara signifikan dalam beberapa tahun terakhir. Berbagai platform belanja online bersaing untuk meningkatkan pengalaman pengguna dan tingkat konversi penjualan. Namun, salah satu tantangan utama yang dihadapi perusahaan e-commerce adalah tingginya jumlah pengunjung situs yang tidak melakukan transaksi pembelian setelah mengakses berbagai halaman produk.
+
 Perilaku pengguna selama menjelajahi situs, seperti jumlah halaman yang dikunjungi, durasi kunjungan, serta tingkat keluar dari halaman tertentu, dapat memberikan informasi yang berharga untuk memprediksi kemungkinan terjadinya pembelian. Dengan memanfaatkan teknik machine learning, perusahaan dapat mengidentifikasi calon pelanggan yang memiliki potensi tinggi untuk melakukan transaksi.
+
 Pada proyek ini digunakan algoritma Random Forest untuk membangun model klasifikasi yang mampu memprediksi niat pembelian pengguna berdasarkan perilaku mereka selama mengakses situs e-commerce.
+
 1.2 Manfaat Proyek
+
 Bagi perusahaan e-commerce:
+
 •	Membantu mengidentifikasi pelanggan potensial.
+
 •	Mendukung strategi pemasaran yang lebih tepat sasaran.
+
 •	Meningkatkan efektivitas promosi dan konversi penjualan.
 
 Bagi peneliti:
+
 •	Menambah pemahaman mengenai penerapan machine learning dalam bidang e-commerce.
+
 •	Menjadi referensi untuk pengembangan model prediksi perilaku pelanggan.
+
 2. Business Understanding
+   
 2.1 Problem Statements
+
 Berdasarkan latar belakang yang telah dijelaskan, permasalahan yang akan diselesaikan dalam proyek ini adalah:
+
 1.	Bagaimana membangun model machine learning yang mampu memprediksi niat pembelian pengguna situs e-commerce?
-2.	Faktor-faktor apa saja yang memengaruhi keputusan pembelian pengguna?
-3.	Seberapa baik performa algoritma Random Forest dalam memprediksi niat pembelian produk online?
+   
+3.	Faktor-faktor apa saja yang memengaruhi keputusan pembelian pengguna?
+   
+5.	Seberapa baik performa algoritma Random Forest dalam memprediksi niat pembelian produk online?
 
 2.2 Goals
 Tujuan dari proyek ini adalah:
