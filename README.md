@@ -45,7 +45,7 @@ Untuk menyelesaikan permasalahan yang telah dirumuskan, digunakan algoritma Rand
 Dataset yang digunakan adalah Online Shoppers Purchasing Intention Dataset yang diperoleh dari Kaggle dan berasal dari UCI Machine Learning Repository. Dataset ini berisi data aktivitas pengguna selama mengunjungi situs e-commerce yang digunakan untuk memprediksi kemungkinan terjadinya pembelian.
 3.2 Informasi Dataset
 df.info()
-<img width="9,32" height="9,51" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/7bbc54ad-e295-4e41-a5da-9884d401559e" />
 
  
 df.shape
